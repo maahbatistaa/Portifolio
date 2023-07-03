@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Corben&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Corben&family=Fira+Sans:wght@400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  margin: 40px 140px;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #141414;
+}
+
+.menu-itens {
+  font-family: 'Fira Sans', sans-serif;
+  display: inline-block;
+  padding: 20px;
+  font-size: 1.125rem;;
+}
+
+.conteudo {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 140px;
+}
+
+.conteudo-perfil {
+  width: 360px;
+  height: 520px;
+}
+
