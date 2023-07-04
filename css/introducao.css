@@ -37,6 +37,9 @@
   .introducao h1 {
     font-size: 3rem;
   }
+  .introducao h1::before {
+    top: -18px;
+  }
 }
 
 @media (max-width: 800px){
@@ -47,7 +50,9 @@
   .introducao h1 {
     font-size: 2rem;
   }
-
+.introducao p {
+  font-size: 1.25rem;
+}
   .introducao h1::before {
     width: 30px;
     height: 10px;
