@@ -7,3 +7,6 @@ Fiz a criação tanto do layout utilizando Figma, como toda a codificação.
 ## Stack utilizada
 
 **Front-end:** HTML e CSS
+
+## Deploy 
+https://maahbatistaa.github.io/portfolio/
