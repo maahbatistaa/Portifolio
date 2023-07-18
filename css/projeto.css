@@ -1,29 +1,22 @@
-.experiencia {
+.projeto {
   max-width: 1200px;
   padding: 40px 20px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 2fr 1fr;
   gap: 100px;
 }
 
-.experiencia .subtitulo {
+.projeto .subtitulo {
   color: #e0e0e0;
+  max-width: 3.5ch;
 }
 
-.experiencia-texto {
-  font-size: 1.5rem;
-  line-height: 1.33;
-  max-width: 40ch;
-  margin-bottom: 60px;
-  color: #525252;
+.mobile {
+  display: none;
 }
 
-.experiencia-texto strong {
-  color: #141414;
-}
-
-.empresa {
+.projeto-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px 20px;
@@ -34,7 +27,7 @@
   position: relative;
 }
 
-.empresa::before {
+.projeto-container::before {
   content: "";
   display: block;
   width: 4px;
@@ -45,36 +38,35 @@
   left: -4px;
 }
 
-.empresa-ano {
-  position: absolute;
-  top: 22px;
-  left: -100px;
-  text-align: right;
-  width: 80px;
-  color: #525252;
-  font-size: 0.875rem;
-}
-
-.empresa-titulo {
+.projeto-titulo {
   font-size: 1.125rem;
   line-height: 1.1;
   font-weight: bold;
 }
 
-.empresa-texto {
+.projeto-titulo a {
+  text-decoration: none;
+  color: #141414;
+}
+
+.projeto-container:hover {
+  background-color: #E0E0E0;
+}
+
+.projeto-texto {
   font-size: 0.875rem;
   line-height: 1.4;
   color: #525252;
 }
 
-.empresa-habilidades {
+.projeto-habilidades {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   align-content: start;
 }
 
-.empresa-habilidades li {
+.projeto-habilidades li {
   font-size: 0.875rem;
   line-height: 1.4;
   border-radius: 4px;
@@ -83,29 +75,27 @@
 }
 
 @media (max-width: 800px) {
-  .experiencia {
+  .projeto {
     grid-template-columns: 1fr;
     gap: 40px
   }
-  .experiencia .subtitulo{
+  .mobile {
+    display: block;
+  }
+  .projeto .subtitulo {
     color: #141414;
   }
-  .experiencia-texto {
+  .projeto-texto {
     font-size: 1.125rem;
     max-width: 60ch;
   }
-  .empresa-ano {
-    position: initial;
-    order: 1;
-    width: initial;
-    text-align: left;
-    color: #141414;
-    font-weight: bold;
+  .desktop {
+    display: none;
   }
 }
 
 @media (max-width: 400px) {
-  .empresa {
+  .projeto-container {
     grid-template-columns: 1fr;
   }
 }
